@@ -1,4 +1,4 @@
-Param(
+﻿Param(
     [string]$FileName = "TestingScenariosChecklist.xlsx",
     [string]$GitHubExt = "..\..\devhomegithubextension",
     [string]$AzureExt = "..\..\devhomeazureextension",

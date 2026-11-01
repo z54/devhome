@@ -57,4 +57,11 @@
     <DisableXbfLineInfo>False</DisableXbfLineInfo>
   </PropertyGroup>
 
+  <!-- CMT-03：C++ 源文件统一以 UTF-8 解析，避免中文注释触发 C4819（文件编码警告） -->
+  <ItemDefinitionGroup Condition="'$(MSBuildProjectExtension)' == '.vcxproj'">
+    <ClCompile>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+
 </Project>

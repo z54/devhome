@@ -1,4 +1,4 @@
-[CmdLetBinding()]
+﻿[CmdLetBinding()]
 Param(
     [string]$Version,
     [bool]$IsSdkVersion = $false,

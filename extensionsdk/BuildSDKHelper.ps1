@@ -1,4 +1,4 @@
-Param(
+﻿Param(
   [string]$Configuration = "release",
   [string]$VersionOfSDK,
   [bool]$IsAzurePipelineBuild = $false,

@@ -1,2 +1,2 @@
-Write-Host "Stopping WinAppDriver."
+﻿Write-Host "Stopping WinAppDriver."
 Stop-Process -Name "WinAppDriver" -ErrorAction SilentlyContinue

@@ -1,4 +1,4 @@
-function Invoke-SignPackage([string]$Path) {
+﻿function Invoke-SignPackage([string]$Path) {
     if (-not($Path)) {
         Write-Host "Path parameter cannot be empty"
         return

@@ -1,4 +1,4 @@
-# This script unstubs the telemetry at build time and replaces the stubbed file with a reference internal nuget package
+﻿# This script unstubs the telemetry at build time and replaces the stubbed file with a reference internal nuget package
 
 #
 # Unstub managed telemetry

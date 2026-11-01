@@ -1,4 +1,4 @@
-Param(
+﻿Param(
     [Parameter(Mandatory,
       HelpMessage="Base name for input .appx files")]
     [string]

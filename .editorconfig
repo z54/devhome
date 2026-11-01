@@ -236,3 +236,23 @@ spelling_exclusion_path = .\exclusion.dic
 
 # CS8305: Type is for evaluation purposes only and is subject to change or removal in future updates.
 dotnet_diagnostic.CS8305.severity = suggestion
+
+# ============================================================================
+# CMT-03：中文化编码兼容策略（文档与代码注释一律中文）
+# ----------------------------------------------------------------------------
+# 原则：所有含中文的文件都必须能被对应工具链无乱码解析。
+# - ps1：统一 UTF-8 with BOM（已批量补齐；Windows PowerShell 5.1 必需）
+# - cs / xaml / resw / props / targets：UTF-8 with BOM（Visual Studio 默认）
+# - cpp / h：通过 Directory.Build.props 加 /utf-8 编译选项（源文件保持无 BOM UTF-8）
+# - md / idl：保持 UTF-8 无 BOM（GitHub 标准；idl 写入中文注释前需先加 BOM 供 MIDL 识别）
+# ============================================================================
+
+[*]
+charset = utf-8
+
+[*.{cs,xaml,resw,ps1,props,targets}]
+charset = utf-8-bom
+
+[*.{cpp,h,md,idl}]
+charset = utf-8
+
