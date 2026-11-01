@@ -1,4 +1,4 @@
-Param(
+﻿Param(
     [string]$Platform = "x64",
     [string]$Configuration = "debug",
     [string]$VersionOfSDK,

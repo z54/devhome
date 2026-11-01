@@ -1,4 +1,4 @@
-param (
+﻿param (
     [string]$Platform = "x64"
 )
 

@@ -1,4 +1,4 @@
-# Script to capture log files and create a zip file for upload to GitHub or log analysis.
+﻿# Script to capture log files and create a zip file for upload to GitHub or log analysis.
 
 param(
     [switch]$StopDevHome = $false

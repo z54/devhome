@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
  
 Install DevSetupAgent Windows service and DevSetupEngine COM server on a VM

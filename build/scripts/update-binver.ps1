@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     Updates the given version header file to match the version info passed in as a string.
 .DESCRIPTION
